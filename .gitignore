@@ -1,0 +1,9 @@
+# ROS2 build artifacts
+ros2_workspace/build/
+ros2_workspace/install/
+ros2_workspace/log/
+
+# C++ compiled binaries
+cpp_basics/01_modern_basics
+cpp_basics/02_exercise
+cpp_basics/03_stl_containers
