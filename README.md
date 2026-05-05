@@ -58,7 +58,8 @@ robotics-portfolio/
 - [x] 探索アルゴリズム（BFS/DFS、A*）を Python & C++ で実装
 - [x] KD木の構築と最近傍探索を Python & C++ で実装
 - [x] ROS2 通信パターン（Topic / Service / Action）の理解と実装（Python）
-- [WIP] ROS2 通信パターンの C++ 実装（Subscriber, Service, Action）
+- [x] ROS2 通信パターンの C++ 実装（Topic Pub/Sub, Service Server/Client）
+- [ ] ROS2 Action の C++ 実装
 
 ### Phase 2: ROS2 基礎 → SO-101 を動かす（2025/5 第1-2週）
 - [ ] SO-101 の URDF を読み込み、RViz で可視化

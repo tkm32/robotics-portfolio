@@ -23,10 +23,15 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(joint_publisher src/joint_publisher.cpp)
-ament_target_dependencies(joint_publisher rclcpp std_msgs)
+function(custom_executable target)
+  add_executable(${target} src/${target}.cpp)
+  ament_target_dependencies(${target} "rclcpp" "std_msgs" "std_srvs")
+  install(TARGETS ${target} DESTINATION lib/${PROJECT_NAME})
+endfunction()
 
-install(TARGETS joint_publisher
-  DESTINATION lib/${PROJECT_NAME})
+custom_executable(joint_publisher)
+custom_executable(joint_subscriber)
+custom_executable(gripper_server)
+custom_executable(gripper_client)
 
 ament_package()

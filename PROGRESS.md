@@ -18,3 +18,9 @@
 - ROS2 通信パターン（Topic / Service / Action）の理解と実装（Python & C++）
 - SO-101 をゴールにした ROS2 学習カリキュラムの策定
 - ROS2 ワークスペースの正規構成で C++ パッケージをビルド・実行
+
+## 2025/5/4-5 — ROS2 C++ 実装
+- C++ Subscriber 実装（create_subscription, UniquePtr コールバック, spin の理解）
+- C++ Service Server/Client 実装（create_service, create_client, 非同期コールバック方式）
+- CMakeLists.txt に custom_executable 便利関数を導入
+- ROS2 通信の内部構造（middleware/DDS、所有権モデル）の理解を深めた
