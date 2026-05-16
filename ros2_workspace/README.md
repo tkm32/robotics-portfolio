@@ -115,6 +115,8 @@ LD_LIBRARY_PATH=build/so101_tools/feetech_driver:$LD_LIBRARY_PATH \
 
 全関節を順にフルスイープ → 波打ち動作 → ホーム復帰。
 
+注意: これはROS2ノードではなく、feetech_driverライブラリを直接使ったスタンドアロンツール。ros2_control経由の制御は「次のステップ」で対応予定。
+
 ## 実機用 ros2_control 設定
 
 `src/lerobot_ws/src/lerobot_description/urdf/so101_ros2_control_real.xacro` にキャリブ結果を反映済み。
