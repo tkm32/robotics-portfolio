@@ -63,18 +63,11 @@ source install/setup.bash
 
 ### 4. キャリブレーション
 
-```bash
-ros2 run feetech_ros2_driver feetech_calibration_node \
-  --ros-args -p usb_port:=/dev/ttyACM0 -p save_path:=./calibration.json
-```
+自作ツール（so101_tools/calibration）を使用。詳細は下記「自作ツール」セクション参照。
 
-キャリブレーション済みデータは以前のMac環境から流用予定。
+### 5. コントローラ起動（実機接続）— 未実装
 
-### 5. コントローラ起動（実機接続）
-
-```bash
-ros2 launch lerobot_controller so101_controller.launch.py is_sim:=False usb_port:=/dev/ttyACM0
-```
+so101_ros2_control_real.xacroの統合とlaunchファイルの切り替えが必要。「次のステップ」参照。
 
 ## キャリブレーション結果（2026-05-16）
 
