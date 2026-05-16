@@ -3,6 +3,13 @@ ros2_workspace/build/
 ros2_workspace/install/
 ros2_workspace/log/
 
+# External repositories (clone via README instructions)
+ros2_workspace/src/feetech_ros2_driver/
+ros2_workspace/src/lerobot_ws/
+
+# Calibration output
+ros2_workspace/calibration.json
+
 # C++ compiled binaries
 cpp_basics/01_modern_basics
 cpp_basics/02_exercise
