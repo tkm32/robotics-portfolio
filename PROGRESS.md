@@ -56,5 +56,6 @@
 - A*/ダイクストラ/BFS/DFSの関係整理
 - バイト列パース（一次面接出題）のゼロから再実装
 
-## 2026/5/18 — LeetCode C++
+## 2026/5/18-19 — LeetCode C++
 - LeetCode: #20 Valid Parentheses (C++、stack + unordered_map)
+- LeetCode: #102 Binary Tree Level Order Traversal (C++、queue + BFS)
