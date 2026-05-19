@@ -42,7 +42,8 @@ robotics-portfolio/
 ├── ros2_notes_py/           # ROS2 学習用 Python スクリプト
 └── ros2_workspace/          # ROS2 ワークスペース（正規構成）
     └── src/
-        └── ros2_notes_cpp/  #   C++ による ROS2 ノード実装
+        ├── ros2_notes_cpp/  #   C++ による ROS2 ノード実装
+        └── so101_tools/     #   SO-101 キャリブレーション・デモツール（C++）
 ```
 
 ## 学習ロードマップ
@@ -53,26 +54,30 @@ robotics-portfolio/
 - [x] Ubuntu 24.04 + ROS2 Jazzy セットアップ
 - [x] Claude Code 導入、AI支援学習ワークフロー構築
 
-### Phase 1: アルゴリズムとC++ + ROS2入門（2025/4後半）
-- [x] Modern C++ 速習（C→C++17 の差分、STLコンテナ）
+### Phase 1: アルゴリズム・C++・CS基礎（2025/4〜5月前半）
+- [x] Modern C++ 独習（C→C++17 の差分、STLコンテナ、スマートポインタ）
 - [x] 探索アルゴリズム（BFS/DFS、A*）を Python & C++ で実装
-- [x] KD木の構築と最近傍探索を Python & C++ で実装
-- [x] ROS2 通信パターン（Topic / Service / Action）の理解と実装（Python）
-- [x] ROS2 通信パターンの C++ 実装（Topic Pub/Sub, Service Server/Client）
-- [ ] ROS2 Action の C++ 実装
+- [x] KD木の構築と最近傍探索を Python で実装（SLAMでのICP応用を理解）
+- [x] LeetCode でアルゴリズム実装力強化（ヒープ、ハッシュ、スタック、連結リスト、区間マージ等）
+- [x] C++ 深掘り（RAII、ムーブセマンティクス、vtable、テンプレート、キャスト4種）
+- [x] OS・並行処理（プロセス/スレッド、mutex/セマフォ/condvar、デッドロック、RTOS）
+- [x] ネットワーク（TCP/UDP、シリアル通信、TLS、gRPC）
+- [x] 設計（Observer/Factory/Singleton、SOLID、Producer-Consumer、Thread Pool）
+- [x] ROS2 通信パターン（Topic / Service / Action）の自力実装（Python & C++）
 
-### Phase 2: ROS2 基礎 → SO-101 を動かす（2025/5 第1-2週）
+### Phase 2: ROS2 × SO-101 実機（2025/5）
+- [x] feetech_ros2_driver でサーボ認識・通信確認
+- [x] キャリブレーションツール自作（C++、全6軸のhome_raw + 可動域測定）
+- [x] ros2_control 設定作成（so101_ros2_control_real.xacro）
+- [x] デモモーション実行（全軸フルスイープ + 波打ち動作）
 - [ ] SO-101 の URDF を読み込み、RViz で可視化
-- [ ] ros2_control + so101_hardware_interface で実機サーボに接続
-- [ ] トピック経由で関節角度を指令し、SO-101 を動かす
+- [ ] MoveIt2 での動作計画
 
-### Phase 3: 自律移動ロボットの基礎（2025/5 第3-4週）
+### Phase 3: 自律移動ロボットの基礎（今後）
 - [ ] SLAM の基礎理解（Gazebo + TurtleBot3 シミュレーションで体験）
 - [ ] Nav2 による自律ナビゲーション（シミュレーション上で経路計画・障害物回避）
-- [ ] 地図生成→経路計画→自律走行の一連のパイプラインを動かす
 
-### Phase 4: MoveIt2 と応用（2025/6）
-- [ ] MoveIt2 で SO-101 の動作計画（逆運動学、衝突回避）
+### Phase 4: MoveIt2 と応用（今後）
 - [ ] SO-101 + カメラでの物体認識・ピック&プレース
 - [ ] LeRobot による模倣学習パイプライン（テレオペ教示→方策学習→実機デプロイ）
 

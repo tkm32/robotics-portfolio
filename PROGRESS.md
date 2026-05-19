@@ -37,3 +37,24 @@
 - テキストブック追加: デザインパターン、SOLID、マルチスレッド実践、テスト、Linuxデバッグツール
 - データ構造の内部動作の理解: ハッシュマップ（O(1)の仕組み、衝突解決）、ヒープ（二分木の理由、sift up/down）
 - OOP設計: Observer/Factory/Singleton、Open/Closed原則
+
+## 2026/5/10-12 — LeetCode（木構造、ヒープ、ハッシュ）
+- LeetCode: #104 Max Depth of Binary Tree, #215 Kth Largest Element (Python+C++), #49 Group Anagrams
+
+## 2026/5/15 — LeetCode + KD木探索
+- LeetCode: #146 LRU Cache（双方向連結リスト+dict、ヘルパー切り出しでリファクタ）
+- KD木 最近傍探索アルゴリズムの理解（降下→バックトラック→枝刈り、ICP応用）
+
+## 2026/5/16 — SO-101 ROS2 実機連携
+- feetech_ros2_driver でサーボ認識確認（6軸 STS3215）
+- キャリブレーションツール自作（C++、ノンブロッキング入力、全6軸の可動域測定）
+- ros2_control 設定作成、デモモーション実行（全軸フルスイープ + 波打ち動作）
+
+## 2026/5/17 — CS基礎知識 総復習
+- 全トピック口頭練習完了: KD木、OS/並行処理、Python、C++、ネットワーク、設計パターン
+- テキスト外トピック: 座標変換（同次変換行列）、PID制御、カルマンフィルタ
+- A*/ダイクストラ/BFS/DFSの関係整理
+- バイト列パース（一次面接出題）のゼロから再実装
+
+## 2026/5/18 — LeetCode C++
+- LeetCode: #20 Valid Parentheses (C++、stack + unordered_map)
